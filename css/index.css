@@ -1,0 +1,75 @@
+.opacity1 {
+    opacity: 1 !important;
+}
+
+  body {
+    font-family: system-ui, sans-serif;
+  }
+  
+  .opacity1 {
+      opacity: 1 !important;
+  }
+  
+  .c-copypaste__inner {
+    display: grid;
+    grid-template-columns: min-content max-content;
+  }
+  
+  @media (max-width: 340px) {
+    .c-copypaste__inner {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      justify-items: center;
+      grid-gap: 10px;
+    }
+  }
+  
+  .c-copypaste__button {
+    font-family: inherit;
+    border: 0;
+    background-color: transparent;
+    color: #006699;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .c-copypaste__button svg {
+    opacity: 0;
+    transition: opacity .3s ease-out;
+    position: absolute;
+    right: -22px;
+  }
+
+  .c-copypaste__button:active {
+    outline: 0;      
+  }
+
+  .c-copypaste__text-to-copy {
+    font-weight: 600;
+    caret-color: transparent;
+  }
+    
+  .c-copypaste__text-to-copy, .c-copypaste__text-to-copy:focus, .c-copypaste__text-to-copy:active {
+    display: inline-block;
+    border: solid .5px #dadada;
+    text-align: center;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .c-copypaste__text-to-copy::selection {
+      background-color: white;
+  }
+  
+  .c-copypaste__text-to-copy::-moz-selection {
+      background-color: white;
+  }
+
+  .c-copypaste__smalltext {
+    color: #666666;
+    display: block;
+    margin-top: 20px;
+  }
